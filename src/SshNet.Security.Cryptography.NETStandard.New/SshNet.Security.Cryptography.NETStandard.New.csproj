@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <AssemblyName>SshNet.Security.Cryptography</AssemblyName>
+        <AssemblyOriginatorKeyFile>../SshNet.Security.Cryptography.snk</AssemblyOriginatorKeyFile>
+        <SignAssembly>true</SignAssembly>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants);FEATURE_CRYPTO_HASHALGORITHM</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="..\SshNet.Security.Cryptography.NETStandard\**\*.cs" Exclude="..\SshNet.Security.Cryptography.NETStandard\Properties\AssemblyInfo.cs">
+            <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+        </Compile>
+    </ItemGroup>
+
+    <Import Project="..\SshNet.Security.Cryptography.Shared\SshNet.Security.Cryptography.Shared.projitems" Label="Shared" />
+
+</Project>
