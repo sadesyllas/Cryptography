@@ -7,6 +7,21 @@
         <AssemblyName>SshNet.Security.Cryptography</AssemblyName>
         <AssemblyOriginatorKeyFile>../SshNet.Security.Cryptography.snk</AssemblyOriginatorKeyFile>
         <SignAssembly>true</SignAssembly>
+
+        <!-- <<<< NUGET -->
+        <PackageId>SshNet.Security.Cryptography.New</PackageId>
+        <Version>2020.0.0-beta-20200203-1</Version>
+        <Title>SshNet.Security.Cryptography.New</Title>
+        <Authors>Renci (+ sadesyllas)</Authors>
+        <PackageLicenseUrl>https://github.com/sadesyllas/Cryptography/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/sadesyllas/Cryptography</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/sadesyllas/Cryptography</PackageProjectUrl>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Description>Cryptographic functions for .NET</Description>
+        <PackageReleaseNotes>
+            Adapted for netstandard2.1 from https://github.com/sshnet/Cryptography/.
+        </PackageReleaseNotes>
+        <!-- NUGET >>>> -->
     </PropertyGroup>
 
     <PropertyGroup>
